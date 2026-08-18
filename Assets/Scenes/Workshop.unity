@@ -369,15 +369,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Workshop
   isSixOClock: 1
   password: Moon
-  as03Number: 0
-  as04Number: 0
-  as05GuessingNumber: 0
-  as05RandomNumber: 0
-  as06GuessingNumber: 0
-  as06RandomNumber: 0
-  as07Username: 
-  as07Password: 
-  as07Age: 0
+  as03Number: 10
+  as04Number: 9
+  as05GuessingNumber: 11
+  as05RandomNumber: 20
+  as06GuessingNumber: 20
+  as06RandomNumber: 20
+  as07Username: User
+  as07Password: user123
+  as07Age: 20
   as07IsPaid: 0
 --- !u!4 &1734758268
 Transform:
