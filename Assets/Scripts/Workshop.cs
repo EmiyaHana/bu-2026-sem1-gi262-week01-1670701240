@@ -8,7 +8,7 @@ public class Workshop : MonoBehaviour
     {
         As01_SyntaxIf();
         As02_StringComparisonExample();
-        // As03_NumberComparisonExample();
+        As03_NumberComparisonExample();
         // As04_AndOrOperatorExample();
         // As05_GuessingNumberExample();
         // As06_GuessingNumberMoreOrLessExample();
@@ -37,7 +37,30 @@ public class Workshop : MonoBehaviour
     public int as03Number;
     public void As03_NumberComparisonExample()
     {
-
+        if (as03Number > 10)
+        {
+            Debug.Log("My number > 10.");
+        }
+        if (as03Number >= 10)
+        {
+            Debug.Log("My number >= 10.");
+        }
+        if (as03Number < 10)
+        {
+            Debug.Log("My number < 10.");
+        }
+        if (as03Number <= 10)
+        {
+            Debug.Log("My number <= 10.");
+        }
+        if (as03Number == 10)
+        {
+            Debug.Log("My number == 10.");
+        }
+        if (as03Number != 10)
+        {
+            Debug.Log("My number != 10.");
+        }
     }
 
     public int as04Number;
