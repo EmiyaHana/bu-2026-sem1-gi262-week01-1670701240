@@ -7,7 +7,7 @@ public class Workshop : MonoBehaviour
     void Start()
     {
         As01_SyntaxIf();
-        // As02_StringComparisonExample();
+        As02_StringComparisonExample();
         // As03_NumberComparisonExample();
         // As04_AndOrOperatorExample();
         // As05_GuessingNumberExample();
@@ -22,12 +22,16 @@ public class Workshop : MonoBehaviour
         {
             Debug.Log("The door open.");
         }
+        Debug.Log("Knock knock!");
     }
 
     public string password;
     public void As02_StringComparisonExample()
     {
-        
+        if (password == "Moon")
+        {
+            Debug.Log("Password is correct.");
+        }
     }
 
     public int as03Number;
