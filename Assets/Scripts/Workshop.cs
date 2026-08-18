@@ -9,8 +9,8 @@ public class Workshop : MonoBehaviour
         // As01_SyntaxIf();
         // As02_StringComparisonExample();
         // As03_NumberComparisonExample();
-        As04_AndOrOperatorExample();
-        // As05_GuessingNumberExample();
+        // As04_AndOrOperatorExample();
+        As05_GuessingNumberExample();
         // As06_GuessingNumberMoreOrLessExample();
         // As07_VerifyIdentityExample();
     }
@@ -80,7 +80,18 @@ public class Workshop : MonoBehaviour
     public int as05RandomNumber;
     public void As05_GuessingNumberExample()
     {
-
+        if (as05GuessingNumber == as05RandomNumber)
+        {
+            Debug.Log("Congratulation!");
+        }
+        else
+        {
+            Debug.Log("Try again.");
+        }
+        /*if (as05GuessingNumber != as05RandomNumber)
+        {
+            Debug.Log("Try again.");
+        }*/
     }
 
     public int as06GuessingNumber;
