@@ -6,7 +6,7 @@ public class Workshop : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // As01_SyntaxIf();
+        As01_SyntaxIf();
         // As02_StringComparisonExample();
         // As03_NumberComparisonExample();
         // As04_AndOrOperatorExample();
@@ -18,7 +18,10 @@ public class Workshop : MonoBehaviour
     public bool isSixOClock;
     public void As01_SyntaxIf()
     {
-        
+        if (isSixOClock)
+        {
+            Debug.Log("The door open.");
+        }
     }
 
     public string password;
