@@ -5,13 +5,13 @@ public class Assignment : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // As01_CheckNumberSign();
-        // As02_GetDayName();
-        // As03_ValidatePassword();
-        // As04_GetGrade();
-        // As05_IsLeapYear();
-        // As06_Calculate();
-        // As07_GetSeason();
+        As01_CheckNumberSign();
+        As02_GetDayName();
+        As03_ValidatePassword();
+        As04_GetGrade();
+        As05_IsLeapYear();
+        As06_Calculate();
+        As07_GetSeason();
         // As08_PurchasingSystemExample();
         // As09_RockPaperScissorsExample();
         // As10_CalculateWeaponDamage();
@@ -113,13 +113,14 @@ public class Assignment : MonoBehaviour
     public double as06Num1;
     public char as06Op;
     public double as06Num2;
+    public double result;
     public void As06_Calculate()
     {
         switch (as06Op)
         {
-             case '+': result = as06Num1 + as06Num2; break;
-             case '-': result = as06Num1 - as06Num2; break;
-             case '*': result = as06Num1 * as06Num2; break;
+             case '+': result = as06Num1 + as06Num2; Debug.Log("Result : " + result); break;
+             case '-': result = as06Num1 - as06Num2; Debug.Log("Result : " + result); break;
+             case '*': result = as06Num1 * as06Num2; Debug.Log("Result : " + result); break;
              case '/':
                 if (as06Num2 == 0)
                 {
@@ -128,6 +129,7 @@ public class Assignment : MonoBehaviour
                 else
                 {
                     result = as06Num1 / as06Num2;
+                    Debug.Log("Result : " + result);
                 }
                 break;
              default:
