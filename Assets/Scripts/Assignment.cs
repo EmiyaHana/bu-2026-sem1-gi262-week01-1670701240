@@ -15,7 +15,7 @@ public class Assignment : MonoBehaviour
         As08_PurchasingSystemExample();
         As09_RockPaperScissorsExample();
         As10_CalculateWeaponDamage();
-        // As11_DeterminePlayerRank();
+        As11_DeterminePlayerRank();
     }
 
     public int as01Number;
@@ -241,10 +241,26 @@ public class Assignment : MonoBehaviour
 
     public int as11Score;
     public int as11CompletionTime;
+    public string rank;
+    public int baseCoins;
     public void As11_DeterminePlayerRank()
     {
-        // TODO: Add your implementation here
-        // Example: Debug.Log("result as string");
-        throw new System.NotImplementedException();
+        if (as11Score < 0 || as11CompletionTime < 0)
+        {
+            Debug.Log("Invalid score or time");
+            return;
+        }
+
+        if (as11Score >= 8000) { rank = "Gold"; baseCoins = 100; }
+        else if (as11Score >= 6000) { rank = "Silver"; baseCoins = 75; }
+        else if (as11Score >= 4000) { rank = "Bronze"; baseCoins = 50; }
+        else if (as11Score >= 0) { rank = "Participation"; baseCoins = 25; }
+
+        int timeBonus = 0;
+        if (as11CompletionTime <= 30) timeBonus = 25;
+        else if (as11CompletionTime <= 60) timeBonus = 10;
+
+        int totalCoins = baseCoins + timeBonus;
+        Debug.Log($"{rank} Rank - {totalCoins} coins earned!");
     }
 }

@@ -479,8 +479,10 @@ MonoBehaviour:
   as09ComputerChoice: 0
   as10WeaponType: dagger
   as10BaseDamage: 100
-  as11Score: 0
-  as11CompletionTime: 0
+  as11Score: 8000
+  as11CompletionTime: 25
+  rank: 
+  baseCoins: 0
 --- !u!4 &1270451329
 Transform:
   m_ObjectHideFlags: 0
