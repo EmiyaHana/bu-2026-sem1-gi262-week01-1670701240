@@ -477,8 +477,8 @@ MonoBehaviour:
   as08Payment: 25
   as09UserChoice: 2
   as09ComputerChoice: 0
-  as10WeaponType: 
-  as10BaseDamage: 0
+  as10WeaponType: dagger
+  as10BaseDamage: 100
   as11Score: 0
   as11CompletionTime: 0
 --- !u!4 &1270451329
