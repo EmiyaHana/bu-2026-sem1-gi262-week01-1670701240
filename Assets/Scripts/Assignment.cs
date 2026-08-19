@@ -12,7 +12,7 @@ public class Assignment : MonoBehaviour
         As05_IsLeapYear();
         As06_Calculate();
         As07_GetSeason();
-        // As08_PurchasingSystemExample();
+        As08_PurchasingSystemExample();
         // As09_RockPaperScissorsExample();
         // As10_CalculateWeaponDamage();
         // As11_DeterminePlayerRank();
@@ -171,7 +171,25 @@ public class Assignment : MonoBehaviour
     public int as08Payment;
     public void As08_PurchasingSystemExample()
     {
-        throw new System.NotImplementedException();
+        if (as08Quantity <= 0)
+        {
+            Debug.Log("Out of Stock.");
+        }
+        else if (as08Quantity > 0)
+        {
+            if (as08Payment >= as08Price)
+            {
+                Debug.Log("Got the Item.");
+                if (as08Payment - as08Price > 0)
+                {
+                    Debug.Log($"You recieve changes : {as08Payment - as08Price}.");
+                }
+            }
+            else if (as08Payment < as08Price)
+            {
+                Debug.Log("The payment is not enough.");
+            }
+        }
     }
 
     public int as09UserChoice;
