@@ -475,7 +475,7 @@ MonoBehaviour:
   as08Quantity: 0
   as08Price: 10
   as08Payment: 25
-  as09UserChoice: 0
+  as09UserChoice: 2
   as09ComputerChoice: 0
   as10WeaponType: 
   as10BaseDamage: 0
